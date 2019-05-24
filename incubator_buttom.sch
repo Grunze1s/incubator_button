@@ -1,0 +1,364 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5CE7ACBC
+P 2125 1400
+F 0 "SW4" H 2125 1685 50  0000 C CNN
+F 1 "START_PHOTO" H 2125 1594 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH-12mm" H 2125 1600 50  0001 C CNN
+F 3 "~" H 2125 1600 50  0001 C CNN
+	1    2125 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5CE80C03
+P 2450 1150
+F 0 "R7" V 2243 1150 50  0000 C CNN
+F 1 "10K" V 2334 1150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2380 1150 50  0001 C CNN
+F 3 "~" H 2450 1150 50  0001 C CNN
+	1    2450 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5CE83C4F
+P 3000 1400
+F 0 "C4" V 2748 1400 50  0000 C CNN
+F 1 "0.1MIF" V 2839 1400 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 3038 1250 50  0001 C CNN
+F 3 "~" H 3000 1400 50  0001 C CNN
+	1    3000 1400
+	0    1    1    0   
+$EndComp
+Text Label 2450 1000 1    39   ~ 0
+VCC
+Text Label 1925 1400 2    39   ~ 0
+GND
+Text Label 3150 1400 0    39   ~ 0
+GND
+Text Label 2450 1500 3    39   ~ 0
+MC1
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5CE898CB
+P 2100 2550
+F 0 "SW1" H 2100 2835 50  0000 C CNN
+F 1 "STOP_PHOTO" H 2100 2744 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH-12mm" H 2100 2750 50  0001 C CNN
+F 3 "~" H 2100 2750 50  0001 C CNN
+	1    2100 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5CE898D1
+P 2525 2550
+F 0 "R2" V 2318 2550 50  0000 C CNN
+F 1 "1K" V 2409 2550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2455 2550 50  0001 C CNN
+F 3 "~" H 2525 2550 50  0001 C CNN
+	1    2525 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5CE898D7
+P 2525 2225
+F 0 "R1" V 2318 2225 50  0000 C CNN
+F 1 "10K" V 2409 2225 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2455 2225 50  0001 C CNN
+F 3 "~" H 2525 2225 50  0001 C CNN
+	1    2525 2225
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5CE898DD
+P 2525 2900
+F 0 "C1" V 2777 2900 50  0000 C CNN
+F 1 "0.1MIF" V 2686 2900 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 2563 2750 50  0001 C CNN
+F 3 "~" H 2525 2900 50  0001 C CNN
+	1    2525 2900
+	0    -1   -1   0   
+$EndComp
+Text Label 2375 2225 2    39   ~ 0
+VCC
+Wire Wire Line
+	2675 2225 2675 2550
+Wire Wire Line
+	2675 2900 2675 2550
+Connection ~ 2675 2550
+Wire Wire Line
+	2675 2550 2775 2550
+Wire Wire Line
+	2375 2550 2300 2550
+Text Label 1900 2550 2    39   ~ 0
+GND
+Text Label 2375 2900 2    39   ~ 0
+GND
+Text Label 2775 2550 0    39   ~ 0
+MC2
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5CE8A4FC
+P 2100 3650
+F 0 "SW2" H 2100 3935 50  0000 C CNN
+F 1 "HUMIDITY" H 2100 3844 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH-12mm" H 2100 3850 50  0001 C CNN
+F 3 "~" H 2100 3850 50  0001 C CNN
+	1    2100 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5CE8A502
+P 2525 3650
+F 0 "R4" V 2318 3650 50  0000 C CNN
+F 1 "1K" V 2409 3650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2455 3650 50  0001 C CNN
+F 3 "~" H 2525 3650 50  0001 C CNN
+	1    2525 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5CE8A508
+P 2525 3325
+F 0 "R3" V 2318 3325 50  0000 C CNN
+F 1 "10K" V 2409 3325 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2455 3325 50  0001 C CNN
+F 3 "~" H 2525 3325 50  0001 C CNN
+	1    2525 3325
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5CE8A50E
+P 2525 4000
+F 0 "C2" V 2777 4000 50  0000 C CNN
+F 1 "0.1MIF" V 2686 4000 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 2563 3850 50  0001 C CNN
+F 3 "~" H 2525 4000 50  0001 C CNN
+	1    2525 4000
+	0    -1   -1   0   
+$EndComp
+Text Label 2375 3325 2    39   ~ 0
+VCC
+Wire Wire Line
+	2675 3325 2675 3650
+Wire Wire Line
+	2675 4000 2675 3650
+Connection ~ 2675 3650
+Wire Wire Line
+	2675 3650 2775 3650
+Wire Wire Line
+	2375 3650 2300 3650
+Text Label 1900 3650 2    39   ~ 0
+GND
+Text Label 2375 4000 2    39   ~ 0
+GND
+Text Label 2775 3650 0    39   ~ 0
+MC3
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5CE8AE61
+P 2100 4925
+F 0 "SW3" H 2100 5210 50  0000 C CNN
+F 1 "STOP_INCUBATOR" H 2100 5119 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH-12mm" H 2100 5125 50  0001 C CNN
+F 3 "~" H 2100 5125 50  0001 C CNN
+	1    2100 4925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5CE8AE67
+P 2525 4925
+F 0 "R6" V 2318 4925 50  0000 C CNN
+F 1 "1K" V 2409 4925 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2455 4925 50  0001 C CNN
+F 3 "~" H 2525 4925 50  0001 C CNN
+	1    2525 4925
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5CE8AE6D
+P 2525 4600
+F 0 "R5" V 2318 4600 50  0000 C CNN
+F 1 "10K" V 2409 4600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2455 4600 50  0001 C CNN
+F 3 "~" H 2525 4600 50  0001 C CNN
+	1    2525 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5CE8AE73
+P 2525 5275
+F 0 "C3" V 2777 5275 50  0000 C CNN
+F 1 "0.1MIF" V 2686 5275 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 2563 5125 50  0001 C CNN
+F 3 "~" H 2525 5275 50  0001 C CNN
+	1    2525 5275
+	0    -1   -1   0   
+$EndComp
+Text Label 2375 4600 2    39   ~ 0
+VCC
+Wire Wire Line
+	2675 4600 2675 4925
+Wire Wire Line
+	2675 5275 2675 4925
+Connection ~ 2675 4925
+Wire Wire Line
+	2675 4925 2775 4925
+Wire Wire Line
+	2375 4925 2300 4925
+Text Label 1900 4925 2    39   ~ 0
+GND
+Text Label 2375 5275 2    39   ~ 0
+GND
+Text Label 2775 4925 0    39   ~ 0
+MC4
+$Comp
+L Switch:SW_Push SW5
+U 1 1 5CE8B6F5
+P 2125 6200
+F 0 "SW5" H 2125 6485 50  0000 C CNN
+F 1 "START_INCUBATOR" H 2125 6394 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH-12mm" H 2125 6400 50  0001 C CNN
+F 3 "~" H 2125 6400 50  0001 C CNN
+	1    2125 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5CE8B6FB
+P 2550 6200
+F 0 "R10" V 2343 6200 50  0000 C CNN
+F 1 "1K" V 2434 6200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2480 6200 50  0001 C CNN
+F 3 "~" H 2550 6200 50  0001 C CNN
+	1    2550 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5CE8B701
+P 2550 5875
+F 0 "R9" V 2343 5875 50  0000 C CNN
+F 1 "10K" V 2434 5875 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2480 5875 50  0001 C CNN
+F 3 "~" H 2550 5875 50  0001 C CNN
+	1    2550 5875
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5CE8B707
+P 2550 6550
+F 0 "C5" V 2802 6550 50  0000 C CNN
+F 1 "0.1MIF" V 2711 6550 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 2588 6400 50  0001 C CNN
+F 3 "~" H 2550 6550 50  0001 C CNN
+	1    2550 6550
+	0    -1   -1   0   
+$EndComp
+Text Label 2400 5875 2    39   ~ 0
+VCC
+Wire Wire Line
+	2700 5875 2700 6200
+Wire Wire Line
+	2700 6550 2700 6200
+Connection ~ 2700 6200
+Wire Wire Line
+	2700 6200 2800 6200
+Wire Wire Line
+	2400 6200 2325 6200
+Text Label 1925 6200 2    39   ~ 0
+GND
+Text Label 2400 6550 2    39   ~ 0
+GND
+Text Label 2800 6200 0    39   ~ 0
+MC5
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J1
+U 1 1 5CE8C492
+P 3575 3075
+F 0 "J1" H 3625 3392 50  0000 C CNN
+F 1 "CONTORL" H 3625 3301 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 3575 3075 50  0001 C CNN
+F 3 "~" H 3575 3075 50  0001 C CNN
+	1    3575 3075
+	1    0    0    -1  
+$EndComp
+Text Label 3375 3175 2    39   ~ 0
+MC1
+Text Label 3875 3175 0    39   ~ 0
+MC2
+Text Label 3375 3075 2    39   ~ 0
+MC3
+Text Label 3875 3075 0    39   ~ 0
+MC4
+Text Label 3875 3275 0    39   ~ 0
+MC5
+Text Label 3375 2975 2    39   ~ 0
+GND
+Text Label 3875 2975 0    39   ~ 0
+VCC
+$Comp
+L Device:C C6
+U 1 1 5CE8D66A
+P 3500 3700
+F 0 "C6" H 3615 3746 50  0000 L CNN
+F 1 "0.1MIF" H 3615 3655 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 3538 3550 50  0001 C CNN
+F 3 "~" H 3500 3700 50  0001 C CNN
+	1    3500 3700
+	1    0    0    -1  
+$EndComp
+Text Label 3500 3550 0    39   ~ 0
+VCC
+Text Label 3500 3850 3    39   ~ 0
+GND
+NoConn ~ 3375 3275
+$Comp
+L Device:R R8
+U 1 1 5CE7C8CC
+P 2625 1400
+F 0 "R8" V 2832 1400 50  0000 C CNN
+F 1 "1K" V 2741 1400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2555 1400 50  0001 C CNN
+F 3 "~" H 2625 1400 50  0001 C CNN
+	1    2625 1400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2325 1400 2450 1400
+Wire Wire Line
+	2450 1300 2450 1400
+Connection ~ 2450 1400
+Wire Wire Line
+	2450 1400 2475 1400
+Wire Wire Line
+	2775 1400 2850 1400
+Wire Wire Line
+	2450 1400 2450 1500
+$EndSCHEMATC
